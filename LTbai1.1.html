@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap 1 bai 1</title>
+</head>
+<body>
+
+<script>
+    let arr=[];
+    let arr2=[];
+    let n = parseInt(prompt('nhap vao so phan tu'));
+     arr.length=n;
+    for(let i=0;i<arr.length;i++){
+        arr[i] = parseInt(prompt('nhap vao tung phan tu'))
+    }
+     for(let i=0; i<arr.length;i++){
+         if(arr[i]>=10)
+             arr2.push(arr[i])
+     }
+     for(let j=0;j<arr2.length;j++){
+         document.write(arr2[j]+',')
+     }
+
+
+</script>
+</body>
+</html>
