@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap 1 bai 8</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let l = parseInt(prompt('nhap vao do dai cua mang'));
+    arr.length = l;
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt('nhap vao phan tu cua mang'));
+    }
+    arr.sort(function(a,b){
+        return a-b ;
+    });
+    console.log(arr)
+</script>
+</body>
+</html>
