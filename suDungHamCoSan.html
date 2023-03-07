@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>su dung cac ham co san</title>
+</head>
+<body>
+
+<script>
+    // Bài 1
+    // let arr1 = ['Red','Green'];
+    // let arr2 = ['White','Black'];
+    // let arr3;
+    //  arr3 = arr1.concat(arr2);
+    //  document.write(arr3)
+
+    // Bài 2
+    // let int = prompt('nhap vao day so');
+    // let str = int.toString();
+    // let kq = [str[0]];
+    // for (let i = 1; i < str.length; i++) {
+    //     if(str[i-1]%2===0 && str[i]%2===0){
+    //         kq.push('-',str[i]);
+    //     }else {
+    //         kq.push(str[i])
+    //     }
+    // }console.log(kq.join(''));
+
+    // Bài 3
+    let str = 'The Quick Brown Fox';
+    let str1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let str2 = 'abcdefghijklmnopqrstuvwxyz';
+    let result = [];
+
+    for(let x=0; x<str.length; x++)
+    {
+        if(str1.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(str2.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</body>
+</html>
