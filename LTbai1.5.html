@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap 1 bai 5</title>
+</head>
+<body>
+
+<script>
+    let count = 0 // so luong nguyen am trong chuoi
+    let str = "trung tam code gym he thong lap trinh hien dai";
+    let str2 = "aiueo"
+
+    for (let x = 0; x < str.length; x++) {
+        for (let y = 0; y < str2.length; y++) {
+            if (str2[y] === str[x]) {
+                count++;
+            }
+        }
+    }document.write(`${str}  <br> <br>  so luong nguyen am trong chuoi = ${count}`)
+
+
+</script>
+</body>
+</html>
