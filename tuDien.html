@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ Điển</title>
+</head>
+<body>
+<p>nhập từ</p>
+<label><input type="text" id="str" placeholder="nhap vao tu can tim"></label>
+<label><input type="button" id="check" value="search"></label>
+<p id="demo"></p>
+<script>
+
+    let ck = document.getElementById('check')
+    ck.addEventListener('click', trans)
+
+    function trans() {
+
+        let arr1 = ['apple', 'banana', 'car', 'bike', 'truck', 'air'];
+        let arr2 = ['táo', 'chuối', 'ô tô', 'xe máy', 'xe tải', 'không khí'];
+        let arr1Index = 0;
+        let result;
+        let srt = document.getElementById('str').value;
+        for (let i = 0; i < arr1.length; i++) {
+            if (srt === arr1[i]) {
+                arr1Index = i;
+                for (let j = 0; j <= arr2.length; j++) {
+                    if (arr1Index === j) {
+                        result = arr2[j];
+                    }
+                }
+            }
+        }
+        document.getElementById('demo').innerHTML = result;
+    }
+
+</script>
+</body>
+</html>
