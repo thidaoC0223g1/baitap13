@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyentap 1 bai 6</title>
+</head>
+<body>
+
+<script>
+    let n = parseInt(prompt("nhap 1 so nguyen"));
+    let arr = [-3, 4, -5, -7, 9, 5, -2, 5, 10, 16];
+    let son = 1;
+    for (let i = 0; i < arr.length; i++) {
+        if(n===arr[i]) {
+       son = 2;
+       break;
+        } son = 1;
+    } console.log(son)
+     if (son === 1){alert("khong co")} else if (son === 2){alert("co n")}
+
+</script>
+</body>
+</html>
